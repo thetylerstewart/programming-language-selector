@@ -8,18 +8,22 @@ $(document).ready(function () {
           $('.language-one').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
           $('.jumbo-one').hide();
           $('.jumbo-two').show();
+          $('.header-question').hide();
         } else if (formOne === 'b') {
           $('.language-two').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
           $('.jumbo-one').hide();
           $('.jumbo-two').show();
+          $('.header-question').hide();
         } else if (formOne === 'c') {
           $('.language-three').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
           $('.jumbo-one').hide();
           $('.jumbo-two').show();
+          $('.header-question').hide();
         } else if (formOne === 'd') {
           $('.language-four').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
           $('.jumbo-one').hide();
           $('.jumbo-two').show();
+          $('.header-question').hide();
         }
       }
     })
@@ -117,7 +121,7 @@ $(document).ready(function () {
     $('input:radio').each(function () {
       if ($(this).is(':checked')) {
         const formFive = $(this).val();
-        if (formFive === 'a') {
+        if ((formFive === 'a') || (formFive === 'b') || (formFive === 'c') || (formFive === 'd')) {
           $('.language-one').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
           $('.language-two').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
           $('.language-three').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
@@ -126,33 +130,7 @@ $(document).ready(function () {
           $('.success').show(800)
           $('.navbar').css('color', 'green').css('border', '1px solid green').fadeIn(1200)
           $('.jumbo-five').hide();
-        } else if (formFive === 'b') {
-          $('.language-one').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.language-two').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.language-three').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.language-four').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.jumbo-Five').hide(800);
-          $('.success').show(800)
-          $('.navbar').css('color', 'green').css('border', '1px solid green').fadeIn(1200)
-          $('.jumbo-five').hide();
-        } else if (formFive === 'c') {
-          $('.language-one').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.language-two').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.language-three').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.language-four').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.jumbo-five').hide(800);
-          $('.success').show(800)
-          $('.navbar').css('color', 'green').css('border', '1px solid green').fadeIn(1200)
-          $('.jumbo-five').hide();
-        } else if (formFive === 'd') {
-          $('.language-one').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.language-two').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.language-three').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.language-four').css('color', 'red').css('border', '1px solid red').fadeOut(1200)
-          $('.jumbo-five').hide(800);
-          $('.success').show(800)
-          $('.navbar').css('color', 'green').css('border', '1px solid green').fadeIn(1200)
-          $('.jumbo-five').hide();
+          $('.email-collection').show();
         }
       }
     })
